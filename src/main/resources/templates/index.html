@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Getting Started: Serving Web Content</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form id="indexId" action="/api/index" method="post" target="_blank">
+		<p>
+			<label for="q">URL:</label>
+			<input type="text" id="q" name="q">
+			<label for="depth">Depth indexing</label>
+			<input type="number" id="depth" name="depth" value="3" min="1" max="10">
+		</p>
+		<p><input type="submit" value="Submit"></p>
+	</form>
+	<div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Getting Started: Serving Web Content</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="search.js"></script>
+</head>
+<body>
+	<form id="searchId" action="/api/search" method="post" target="_blank">
+		<p>
+			<label for="q">Query:</label>
+			<input type="text" id="q" name="q" size="40">
+		</p>
+		<p><input type="submit" value="Submit"></p>
+	</form>
+
+	<div id="result"></div>
+</body>
+</html>
